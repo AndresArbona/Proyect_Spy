@@ -39,7 +39,8 @@ ACharacterClass::ACharacterClass()
 void ACharacterClass::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	UE_LOG(LogTemp, Warning, TEXT("Spawneado rey"));
 }
 
 // Called every frame
@@ -104,7 +105,6 @@ void ACharacterClass::BeginSprint()
 void ACharacterClass::EndSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = 600.0f;
-
 }
 
 void ACharacterClass::BeginCrounch()
