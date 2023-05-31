@@ -29,19 +29,16 @@ protected:
 	
 	//Called for forward/backward input
 	void MoveForward(float AxisValue);
-	
 	//Called for Left/Right input
 	void MoveRight(float AxisValue);
 
 	//Sets character Movement speed to sprint values
 	void BeginSprint();
-	
 	//Sets character movement speed back to default speed value
 	void EndSprint();
 	
 	//Request for character to crounch
 	void BeginCrounch();
-	
 	//Request for character endCrounch
 	void EndCrouch();
 
