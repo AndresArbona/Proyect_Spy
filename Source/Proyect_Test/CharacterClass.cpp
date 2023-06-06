@@ -32,7 +32,7 @@ ACharacterClass::ACharacterClass()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->bUseControllerDesiredRotation = true;
 	GetCharacterMovement()->bIgnoreBaseRotation = true;
-	
+	GetCharacterMovement()->MovementState.bCanCrouch = true;
 }
 
 // Called when the game starts or when spawned
