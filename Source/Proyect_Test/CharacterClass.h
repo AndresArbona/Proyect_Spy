@@ -15,6 +15,12 @@ public:
 	// Sets default values for this character's properties
 	ACharacterClass();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -32,21 +38,15 @@ protected:
 	//Called for Left/Right input
 	void MoveRight(float AxisValue);
 
+	/*
 	//Sets character Movement speed to sprint values
 	void BeginSprint();
 	//Sets character movement speed back to default speed value
 	void EndSprint();
-	
+	*/
+
 	//Request for character to crounch
 	void BeginCrounch();
 	//Request for character endCrounch
 	void EndCrouch();
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

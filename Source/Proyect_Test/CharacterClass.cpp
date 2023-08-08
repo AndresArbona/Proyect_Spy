@@ -60,8 +60,8 @@ void ACharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterClass::MoveRight);
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ACharacterClass::BeginSprint);
-	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ACharacterClass::EndSprint);
+	//PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ACharacterClass::BeginSprint);
+	//PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ACharacterClass::EndSprint);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ACharacterClass::BeginCrounch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ACharacterClass::EndCrouch);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacterClass::Jump);
@@ -98,6 +98,7 @@ void ACharacterClass::MoveRight(float AxisValue)
 	}
 }
 
+/*
 void ACharacterClass::BeginSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = 1000.0f;
@@ -106,6 +107,7 @@ void ACharacterClass::EndSprint()
 {
 	GetCharacterMovement()->MaxWalkSpeed = 600.0f;
 }
+*/
 
 void ACharacterClass::BeginCrounch()
 {
