@@ -3,7 +3,6 @@
 
 #include "CharacterClass.h"
 
-#include "BaseGizmos/GizmoElementShared.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
